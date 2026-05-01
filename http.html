@@ -9,26 +9,37 @@
 </head>
 <body>  
     <header>
-        <h1>1.2 TCP/IP Protocol</h1>
+        <h1>1.7 Hypertext Transfer Protocol (HTTP)</h1>
     </header>
 
     <section>
         <h3>Definition</h3>
-        <p>A set of communication protocols used to connect devices on the internet, enabling data transmission and routing.</p>
+        <p>A protocol used for transmitting hypermedia documents, such as HTML pages, over the internet.</p>
         
-        <h3>Examples</h3>
+        <h4>HTTP Request-Response</h4>
         <ul>
-            <li><strong>STMP</strong>Sending email messages</li>
-            <li><strong>HTTP</strong>HyperText Transfer Protocol for web browsing</li>
-            <li><strong>FTP</strong>File Transfer Protocol for file transfers</li>
+            <li><strong>Step 1</strong>: Client sends HTTP request</li>
+            <li><strong>Step 2</strong>: Server processes request and sends HTTP response</li>
+            <li><strong>Step 3</strong>: Client renders content based on response</li>
+            <li><strong>Step 4</strong>: Client may send additional requests for resources (e.g., images, CSS, JavaScript)</li> 
+            <li><strong>Step 5</strong>: Server responds to additional requests and client continues rendering until page is fully loaded</li>  
+            <li><strong>Step 6</strong>: Client may interact with page, sending further HTTP requests (e.g., form submissions, AJAX calls)</li>
+            <li><strong>Step 7</strong>: Server processes interactions and sends appropriate responses, allowing for dynamic content updates without full page reloads</li>
+            <li><strong>Step 8</strong>: Client and server continue to communicate as needed until user navigates away or closes the browser</li>   
+            <li><strong>Step 9</strong>: Client may cache certain resources for faster loading on subsequent visits, reducing the number of HTTP requests needed in the future</li>
+            <li><strong>Step 10</strong>: Server may also implement security measures (e.g., HTTPS, authentication) to protect data during transmission and ensure secure communication between client and server</li>  
         </ul>
+        <h4>Role in HTTP</h4>
+        <p>HTTP is the foundation of data communication on the World Wide Web, enabling the transfer of web pages and resources between clients and servers.</p>
+        <p>It allows users to access and interact with websites, making it a crucial component of web development and the overall functioning of the internet.</p>  
+        <p>HTTP also supports various methods (e.g., GET, POST, PUT, DELETE) that allow clients to perform different actions on resources, such as retrieving data, submitting forms, updating content, and deleting resources. </p>
     </section>
 
     <hr>
 
     <div class="navigation-footer">
-        <button onclick="location.href='www.html'">Back to WWW</button>
-        <button onclick="location.href='web-browsers.html'">Next: Web Browsers →</button>
+        <button onclick="location.href='dns.html'">Back to DNS</button>
+        <button onclick="location.href='intranet.html'">Next: Intranet →</button>
     </div>
   
 </html>
