@@ -1,23 +1,60 @@
-/* This part handles the background image on the whole page */
-body {
+/* Unique Home Background */
+.home-bg {
     background-image: url('images/intro.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* Background specifically for the Login page */
+.login-bg {
+    background-image: url('images/portal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     height: 100vh;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* This part styles the white/glass box in the middle */
-.container {
-    background: rgba(255, 255, 255, 0.9); /* White with 90% transparency */
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+/* Keep your container styled for the login box */
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    width: 350px;
     text-align: center;
-    max-width: 450px;
+}
+
+/* Background for ALL DNS and Lesson pages */
+.lesson-bg {
+    background-image: url('images/common.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Styling the content box so it's readable over common.jpeg */
+.container {
+    background: rgba(255, 255, 255, 0.95); /* Slightly more solid for reading */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    max-width: 800px;
     width: 90%;
+    margin-top: 50px;
 }
