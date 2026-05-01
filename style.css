@@ -1,10 +1,11 @@
 /* Unique Home Background */
 .home-bg {
     background-image: url('images/intro.jpeg');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -17,11 +18,12 @@ body {
 }
 .home-container {
     background: rgba(255, 255, 255, 0.9);
-    padding: 40px;
+    padding: 30px;
+    width: 90%;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     text-align: center;
-    max-width : 500px;
+    max-width : 400px;
 }
 /* Background specifically for the Login page */
 .login-bg {
