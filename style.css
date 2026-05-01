@@ -21,9 +21,10 @@ body {
     padding: 30px;
     width: 90%;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.929);
     text-align: center;
     max-width : 400px;
+    margin: auto;
 }
 /* Background specifically for the Login page */
 .login-bg {
@@ -43,7 +44,7 @@ body {
     background: rgba(255, 255, 255, 0.9);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.9);
     width: 350px;
     text-align: center;
 }
