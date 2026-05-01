@@ -11,17 +11,37 @@
 
     <div class="login-container">
         <h2>Portal Login</h2>
-        <label>Username:</label> <input type="text" id="user"><br><br>
-        <label>Password:</label> <input type="password" id="pass"><br><br>
-        <button onclick="login()">Login</button>
+        <form id="loginForm">
+            <label>Username:</label> <input type="text" id="Mbiko" required><br><br>
+            <label>Password:</label> <input type="password" id="1234" placeholder="Enter Passkey" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+        <p id ="errorMessage" style="color: red; display: none;">Invalid credentials. Please try again.</p> 
     </div>
 
     <script>
-        function login() {
-            // This sets the session and moves you forward
-            localStorage.setItem("isLoggedIn", "true");
-            window.location.href = "units.html";
+        function checkLogin() {
+            const username = document.getElementById("Mbiko").value;
+            const password = document.getElementById("1234").value;
+
+            // Simple validation (you can replace this with actual authentication logic)
+            if (username === "Mbiko" && password === "1234") {
+                return true;
+            } else {
+                return false;
+            }
         }
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            if (checkLogin()) {
+                // This sets the session and moves you forward
+                localStorage.setItem("isLoggedIn", "true");
+                window.location.href = "units.html";
+            } else {
+                document.getElementById("errorMessage").style.display = "block";
+            }
+        }); 
+        
     </script>
     </body>
 </html>
