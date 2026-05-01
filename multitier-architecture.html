@@ -9,26 +9,44 @@
 </head>
 <body>  
     <header>
-        <h1>1.2 TCP/IP Protocol</h1>
+        <h1>1.10 Multitier Architecture</h1>
     </header>
 
     <section>
         <h3>Definition</h3>
-        <p>A set of communication protocols used to connect devices on the internet, enabling data transmission and routing.</p>
+        <p>A software architecture pattern that organizes applications into distinct layers, each with specific responsibilities and communication boundaries.</p>
         
-        <h3>Examples</h3>
+        <h3>3-Tier Architecture</h3>
         <ul>
-            <li><strong>STMP</strong>Sending email messages</li>
-            <li><strong>HTTP</strong>HyperText Transfer Protocol for web browsing</li>
-            <li><strong>FTP</strong>File Transfer Protocol for file transfers</li>
+            <li><strong>Presentation Layer</strong>: User interface and user experience components.</li>
+            <li><strong>Application Layer</strong>: Business logic and application processing.</li>
+            <li><strong>Data Layer</strong>: Database management and data storage.</li> 
         </ul>
+        <h3>Common Protocols</h3>   
+        <ol>
+             <li>HTTP/HTTPS for communication between the presentation layer and application layer.</li>
+             <li>JDBC/ODBC for communication between the application layer and data layer.</li>
+            <li>RESTful APIs or SOAP for communication between layers in a service-oriented architecture.</li>
+        </ol>
+        <h3>Benefits</h3>
+        <ul>
+            <li>Improved maintainability and scalability.</li>
+            <li>Better separation of concerns.</li>
+            <li>Enhanced security through layer isolation.</li>
+        </ul>
+        <h3>Functional role</h3>
+        <ol>
+            <li>Allows for modular development and easier maintenance by separating different concerns into distinct layers.</li>
+            <li>Facilitates scalability by allowing each layer to be scaled independently based on demand.</li>
+            <li>Enhances security by isolating different layers, reducing the attack surface and allowing for better access control.</li>
+        </ol>
     </section>
 
     <hr>
 
     <div class="navigation-footer">
-        <button onclick="location.href='www.html'">Back to WWW</button>
-        <button onclick="location.href='web-browsers.html'">Next: Web Browsers →</button>
+        <button onclick="location.href='extranet.html'">Back to Extranet</button>
+        <button onclick="location.href='ftp.html'">Next: FTP →</button>
     </div>
   
 </html>
