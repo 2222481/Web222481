@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <title>1.1 World Wide Web</title>
+    <script>
+        // Security Gate: Redirects to login if not authenticated
+        if (localStorage.getItem("isLoggedIn") !== "true") {
+            window.location.href = "login.html";
+        }
+    </script>
 </head>
-<body>  
-    <div class="home-container">
-        <h1>Welcome to the Home Page</h1>
-        <p>This is the home page of the application. You can navigate to different sections from here.</p>
-        <a href="units.html" class="button">Go to Units</a>
+<body>
+
+    <header>
+        <h1>1.1 The World Wide Web (WWW)</h1>
+    </header>
+
+    <section>
+        <h3>Definition</h3>
+        <p>A wide-area hypermedia information retrieval initiative aiming to give universal access to a large array of documents.</p>
+        
+        <h3>Key Components</h3>
+        <ul>
+            <li><strong>Wide-area</strong>It spans the whole globe</li>
+            <li><strong>Hypermedia</strong> It allows for the integration of text, images, audio, and video</li>
+            <li><strong>Universal Access</strong> It provides access to information from anywhere in the world</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <div class="navigation-footer">
+        <button onclick="location.href='topic1.html'">Back to Topic 1 Menu</button>
+        <button onclick="location.href='tcp-ip.html'">Next: 1.2 TCP/IP Protocol →</button>
     </div>
+
+</body>
 </html>

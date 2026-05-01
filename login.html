@@ -8,14 +8,17 @@
     <title>Login</title>
 </head>
 <body>  
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="units.html" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
-        </form>
-    </div>  
+    <h2>Portal Login</h2>
+    <label>Username:</label> <input type="text" id="user"><br><br>
+    <label>Password:</label> <input type="password" id="pass"><br><br>
+    <button onclick="login()">Login</button>
+
+    <script>
+        function login() {
+            // This sets the session and moves you forward
+            localStorage.setItem("isLoggedIn", "true");
+            window.location.href = "units.html";
+        }
+    </script>
+    </body>
 </html>
