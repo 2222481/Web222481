@@ -5,26 +5,30 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-body {
+.sub-text {
+    color: #444444;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     color: #f4f7f6;
     margin: 0;
 }
 .home-container {
     background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
+    padding: 50px;
     width: 90%;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.929);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width : 400px;
-    margin: auto;
+    max-width : 600px;
+    border: 1px solid #ddd;
 }
 /* Background specifically for the Login page */
 .login-bg {
@@ -38,7 +42,21 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+button {
+    background-color: #2c74a4;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+button.secondary {
+    background-color: #95a5a6;
+}
 /* Keep your container styled for the login box */
 .login-container {
     background: rgba(255, 255, 255, 0.9);

@@ -12,13 +12,14 @@
         <header>
             <h1>1.16 Web 4.0</h1>
         </header>
+        </div>
 
     <section>
         <h3>Definition</h3>
         <p>Web 4.0 refers to the fourth generation of the World Wide Web, characterized by artificial intelligence, machine learning, and more advanced user experiences.</p>
 
         <h3>Characteristics</h3>
-        <ol>
+        <ol style="text-align: left; display: inline-block">
             <li>Artificial Intelligence integration</li>
             <li>Machine Learning algorithms</li>
             <li>Enhanced user experiences</li>
@@ -28,13 +29,13 @@
 
        </section>
         <h3>Technologies</h3>
-     <ol>
+     <ol style="text-align: left; display: inline-block">
             <li><strong>Artificial Intelligence</strong> AI technologies that enable machines to mimic human intelligence and perform tasks such as natural language processing, image recognition, and decision-making.</li>
             <li><strong>Machine Learning</strong> Algorithms that allow computers to learn from data and improve their performance over time without being explicitly programmed.</li>
             <li><strong>Internet of Things (IoT)</strong> The interconnection of everyday objects and devices to the internet, enabling them to collect and exchange data.</li> 
       </ol>
           <h3>Examples</h3>
-        <ul>
+        <ul style="text-align: left; display: inline-block">
             <li><strong>Smart Assistants</strong> AI-powered virtual assistants like Siri and Alexa.</li>
             <li><strong>Recommendation Systems</strong> Platforms that use machine learning to suggest content or products.</li>
             <li><strong>Autonomous Vehicles</strong> Self-driving cars that utilize AI and IoT technologies.</li>
@@ -48,8 +49,16 @@
 
     <div class="navigation-footer">
         <button onclick="location.href='web3.0.html'">Back to Web 3.0</button>
-        <button onclick="location.href='topic1.html'">Next: Topic 1 →</button>
+        <button onclick="location.href='topic1.html'">End of: Topic 1 →</button>
+        <button onclick="exitSite()">Exit</button>
     </div>
+     <script>
+        function exitSite() {
+            if(confirm("Are you sure you want to exit?")) {
+                window.close(); 
+            }
+        }
+    </script>
     </div>
     </body>
   

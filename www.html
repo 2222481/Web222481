@@ -2,12 +2,7 @@
 <html>
 <head>
     <title>1.1 World Wide Web</title>
-    <script>
-        // Security Gate: Redirects to login if not authenticated
-        if (localStorage.getItem("isLoggedIn") !== "true") {
-            window.location.href = "login.html";
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="lesson-bg">
     <div class="container">
@@ -15,13 +10,15 @@
             <h1>1.1 The World Wide Web (WWW)</h1>
         </header>
     </div>
+    <img src="images/www.jpg" alt="World Wide Web" style=""width: 100%; max-width: 400px;">
+
 
     <section>
         <h3>Definition</h3>
         <p>A wide-area hypermedia information retrieval initiative aiming to give universal access to a large array of documents.</p>
         
         <h3>Key Components</h3>
-        <ul>
+        <ul style="text-align: left; display: inline-block">
             <li><strong>Wide-area</strong>: It spans the whole globe</li>
             <li><strong>Hypermedia</strong>: It allows for the integration of text, images, audio, and video</li>
             <li><strong>Universal Access</strong>: It provides access to information from anywhere in the world</li>
