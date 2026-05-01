@@ -10,6 +10,19 @@
     justify-content: center;
     align-items: center;
 }
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #f4f7f6;
+    margin: 0;
+}
+.home-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width : 500px;
+}
 /* Background specifically for the Login page */
 .login-bg {
     background-image: url('images/portal.jpg');
