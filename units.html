@@ -8,9 +8,23 @@
     <title>Login</title>
 </head>
 <body>  
-    <div class="home-container">
-        <h1>Welcome to the Home Page</h1>
-        <p>This is the home page of the application. You can navigate to different sections from here.</p>
-        <a href="units.html" class="button">Go to Units</a>
+    
+<div class="units-grid">
+    <div class="course-card">
+        <h3>Computer Science</h3>
+        <button disabled>Locked</button>
     </div>
+
+    <div class="course-card">
+        <h3>Discrete Mathematics</h3>
+        <button disabled>Locked</button>
+    </div>
+
+    <!-- This is the one you are currently building -->
+    <div class="course-card active">
+        <h3>Web Development</h3>
+        <p>Topic 1: Web Fundamentals</p>
+        <button onclick="location.href='web-development.html'">Enter Unit</button>
+    </div>
+</div>
 </html>
