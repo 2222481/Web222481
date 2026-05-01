@@ -9,26 +9,36 @@
 </head>
 <body>  
     <header>
-        <h1>1.2 TCP/IP Protocol</h1>
+        <h1>1.6 Domain Name System</h1>
     </header>
 
     <section>
         <h3>Definition</h3>
-        <p>A set of communication protocols used to connect devices on the internet, enabling data transmission and routing.</p>
+        <p>A system that translates domain names into IP addresses, enabling users to access websites using easy-to-remember names instead of numerical IP addresses.</p>
         
-        <h3>Examples</h3>
+        <h3>Parts of the DNS</h3>
         <ul>
-            <li><strong>STMP</strong>Sending email messages</li>
-            <li><strong>HTTP</strong>HyperText Transfer Protocol for web browsing</li>
-            <li><strong>FTP</strong>File Transfer Protocol for file transfers</li>
+            <li><strong>DNS Servers</strong>: Responsible for storing and managing domain name records.</li>
+            <li><strong>Domain Name Registrars</strong>: Organizations that manage the reservation of domain names.</li>
+            <li><strong>Zone Files</strong>: Contain the mapping between domain names and their corresponding IP addresses.</li>
         </ul>
+        <h4>Role in Web Development</h4>
+        <p>The DNS plays a crucial role in web development by enabling users to access websites using memorable domain names rather than complex IP addresses. It facilitates the resolution of domain names to IP addresses, ensuring that requests for web resources are directed to the correct servers.</p>     
+        <h5>DNS in Action</h5>
+        <p>When a user types a URL into their web browser, the DNS is responsible for resolving the domain name to the corresponding IP address of the web server hosting the website. This process involves querying DNS servers to retrieve the necessary information, allowing the browser to establish a connection with the correct server and load the requested web page.</p>            
+        <h6>Domain Name parts</h6>
+        <ol>
+            <li><strong>Top-Level Domain (TLD)</strong>: The last part of a domain name, such as .com, .org, or .net.</li>
+            <li><strong>Second-Level Domain</strong>: The part of the domain name that comes before the TLD, often representing the organization or entity (e.g., example in www.example.com).</li>
+            <li><strong>Subdomain</strong>: An optional part of a domain name that can be used to organize and categorize content (e.g., www in www.example.com).</li>  
+        </ol>
     </section>
 
     <hr>
 
     <div class="navigation-footer">
-        <button onclick="location.href='www.html'">Back to WWW</button>
-        <button onclick="location.href='web-browsers.html'">Next: Web Browsers →</button>
+        <button onclick="location.href='urls.html'">Back to URLs</button>
+        <button onclick="location.href='http.html'">Next: HTTP →</button>
     </div>
   
 </html>
